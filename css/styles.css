@@ -1,0 +1,106 @@
+html {
+	background-color: #333333;
+	font-family: "open sans", helvetica, Sans-Serif;
+}
+
+body {
+	background-color: #f9f9f9;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+#header {
+	padding: 12px;
+}
+
+#title { 
+	top: 10px;
+	float: right;
+	font-family: "Amatic SC";
+	width: 100px;
+	text-align: right;
+	margin: 0;
+}
+
+.word h1 {
+	margin: 0;
+}
+
+nav {
+	display: block;
+	background-color: #fa2a00;
+	line-height: 50px;
+}
+
+nav ul {
+	display: none;
+	list-style: none;
+	text-align: right;
+	font-size: 18px;
+}
+
+nav li {
+	display: inline;
+	margin: 12px;
+}
+
+li a {
+	text-decoration: none;
+	color: #f9f9f9;
+}
+
+li a:hover {
+	color: #86b8b1;
+}
+
+#menu {
+	text-align: center;	
+	font-size: 24px;
+}
+
+
+
+
+@media screen and (min-width: 400px) { 
+	#title {width: 200px;}
+	.word h1 {font-size: 40px;}
+}
+
+
+@media screen and (min-width: 480px) {
+	#title {width: 250px;}
+	.word h1 {font-size: 40px;}
+	#menu {display: none;}
+	#header h1 {display: block;}
+	nav ul {display: block;	}
+}
+
+@media screen and (min-width: 720px) { 
+	#title {float: right;}
+	.word h1 {font-size: 60px; margin-left: 15px; line-height: 70px;}
+	.word span {font-size: 80px}
+}
+
+@media screen and (min-width: 985px) { 
+	#title { width: 800px;}
+	.word h1 {font-size: 80px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
