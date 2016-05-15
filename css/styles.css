@@ -19,11 +19,13 @@ body {
 	font-family: "Amatic SC";
 	width: 100px;
 	text-align: right;
-	margin: 0;
+	margin: 0; 
+	word-spacing: 20px;
 }
 
-.word h1 {
-	margin: 0;
+#title #well {
+	font-size: 50px;
+
 }
 
 nav {
@@ -35,16 +37,18 @@ nav {
 nav ul {
 	display: none;
 	list-style: none;
-	text-align: right;
+	text-align: center;
 	font-size: 18px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 nav li {
-	display: inline;
-	margin: 12px;
+	border-top:2px solid #333333;
 }
 
 li a {
+	display: block;
 	text-decoration: none;
 	color: #f9f9f9;
 }
@@ -53,37 +57,75 @@ li a:hover {
 	color: #86b8b1;
 }
 
+li a:active {
+	background-color: #3d1c00;
+}
+
 #menu {
 	text-align: center;	
 	font-size: 24px;
 }
 
+li a #fbook {
+	font-size: 50px;
+}
 
+/* contact */
+#details {
+	width: 90%;
+	margin: 0 auto;
+}
 
+.more-details {
+	background-color: #fa2a00;
+	text-decoration: none;
+	color: #f9f9f9;
+	padding: 5px;
+	font-style: italic;
+}
+
+.more-details:hover {
+	text-decoration: underline;
+}
+
+hr { 
+	margin: 40px 20px;
+}
 
 @media screen and (min-width: 400px) { 
 	#title {width: 200px;}
-	.word h1 {font-size: 40px;}
+	#title span {font-size: 40px;}
+	#header #well span {display: inline-block;}
 }
 
 
 @media screen and (min-width: 480px) {
 	#title {width: 250px;}
-	.word h1 {font-size: 40px;}
-	#menu {display: none;}
-	#header h1 {display: block;}
-	nav ul {display: block;	}
+}
+
+@media screen and (min-width: 660px) {
+	#menu { display: none;}
+	nav {overflow:auto;}
+	nav ul {display: block; float: right;}
+	nav li {display: inline-block; border: none; margin-right: 12px;}
+	#title span {font-size: 60px; margin-left: 15px; line-height: 70px;}
+	#title #well {font-size: 80px;}
+	#title {width: 300px;}
+	#contact {width: 40%; display: inline-block;}
+	#partners {width: 40%; float: right;}
+	#partners:after {content: ''; display: block; clear: both;}
 }
 
 @media screen and (min-width: 720px) { 
-	#title {float: right;}
-	.word h1 {font-size: 60px; margin-left: 15px; line-height: 70px;}
-	.word span {font-size: 80px}
+	#title span {font-size: 60px; margin-left: 15px; line-height: 70px;}
+	#title #well {font-size: 80px;}
+	#title {width: 300px;}
 }
 
 @media screen and (min-width: 985px) { 
 	#title { width: 800px;}
-	.word h1 {font-size: 80px;}
+	#title span {font-size: 100px;}
+	#title #well { font-size: 100px;}
 }
 
 
