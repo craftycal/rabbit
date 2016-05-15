@@ -9,6 +9,12 @@ body {
 	margin: 0 auto;
 }
 
+body:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 #header {
 	padding: 12px;
 }
@@ -92,6 +98,15 @@ hr {
 	margin: 40px 20px;
 }
 
+#care {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#p-bold {
+	font-weight: bold;
+}
+
 @media screen and (min-width: 400px) { 
 	#title {width: 200px;}
 	#title span {font-size: 40px;}
@@ -106,7 +121,7 @@ hr {
 @media screen and (min-width: 660px) {
 	#menu { display: none;}
 	nav {overflow:auto;}
-	nav ul {display: block; float: right;}
+	nav ul {display: block !important; float: right;}
 	nav li {display: inline-block; border: none; margin-right: 12px;}
 	#title span {font-size: 60px; margin-left: 15px; line-height: 70px;}
 	#title #well {font-size: 80px;}
