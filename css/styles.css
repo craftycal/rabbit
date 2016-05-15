@@ -107,6 +107,15 @@ hr {
 	font-weight: bold;
 }
 
+.controle {
+	background-color: #888888;
+}
+
+.controle:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
 @media screen and (min-width: 400px) { 
 	#title {width: 200px;}
 	#title span {font-size: 40px;}
