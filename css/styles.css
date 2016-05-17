@@ -108,13 +108,32 @@ hr {
 }
 
 .controle {
-	background-color: #888888;
+	padding-left: 10px;
+	background-color: #999999;
 }
 
 .controle:hover {
-	cursor: pointer;
-	text-decoration: underline;
+	cursor: pointer;	
 }
+
+.box {
+	display: none;
+	clear: both;
+	margin-bottom: 40px;
+}
+
+.rabbit-food img {
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+}
+
+/*#img-1 {float: right;}
+#img-2 {float: left;}
+#img-3 {float: right;}
+#img-4 {float: left;}
+#img-5 {float: right;}
+#img-6 {float: left;}*/
 
 @media screen and (min-width: 400px) { 
 	#title {width: 200px;}
