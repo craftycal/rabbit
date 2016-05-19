@@ -5,15 +5,11 @@ html {
 
 body {
 	background-color: #f9f9f9;
-	max-width: 1300px;
-	margin: 0 auto;
+	width: 100%;
+	margin: 0;
 }
 
-body:after {
-	content: '';
-	display: block;
-	clear: both;
-}
+
 
 #header {
 	padding: 12px;
@@ -31,7 +27,10 @@ body:after {
 
 #title #well {
 	font-size: 50px;
+}
 
+#title {
+	font-size: 40px;
 }
 
 nav {
@@ -136,11 +135,6 @@ hr {
 .set {display: block; margin-bottom: 20px; border: 1px solid #f9f9f9; clear: both;}
 
 
-@media screen and (min-width: 400px) { 
-	#title {width: 200px;}
-	#title span {font-size: 40px;}
-	#header #well span {display: inline-block;}
-}
 
 
 @media screen and (min-width: 480px) {
@@ -157,7 +151,7 @@ hr {
 	#title {width: 300px;}
 	#contact {width: 40%; display: inline-block;}
 	#partners {width: 40%; float: right;}
-	#partners:after {content: ''; display: block; clear: both;}
+	#details:after { content: ''; display: block; clear: both;}
 	.box {display: block;}
 	#img-1 {float: right; margin-left: 10px;}
 	#img-2 {float: left; margin-right: 10px;}
@@ -174,6 +168,7 @@ hr {
 }
 
 @media screen and (min-width: 985px) { 
+	body {	max-width: 1300px; margin: 0 auto;}
 	#title { width: 800px;}
 	#title span {font-size: 100px;}
 	#title #well { font-size: 100px;}
