@@ -262,6 +262,14 @@ nav li a #fbook {
 		float: left;
 	}
 
+	#phone {
+		color: black;
+	}
+
+	#details a {
+		text-decoration: none;
+	}
+
 	/*care*/
 
 	.box {
