@@ -4,7 +4,6 @@
 		<!-- Website designed and coded by Callum Powell -->
 		<meta charset="utf-8">
 		<title>Contact</title>
-		<meta name="" >
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/styles.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,400italic,600italic,600,300italic' rel='stylesheet' type='text/css'>
@@ -43,24 +42,27 @@
 				<h2>Wellington Rabbit Rescue:</h2>
 				<div class="shadebox">
 					<p>Email: wellingtonrabbitrescue@gmail.com</p>
-					<a href="tel:0274 507 010"><span id="phone">Phone:</span> 0274 507 010</a>
-					<form>
-						<legend>Send us a message:</legend>
+					<a href="tel:0274507010"><span id="phone">Phone:</span> 0274 507 010</a>
+					
+					<P>Send us a message:</P>
+					<form name="email" id="email">
 						<p>Name</p>
-							<input type="text" name="name">
+							<input type="text" id="name" name="name">
 							<br>
 						<p>Email</p>
-							<input type="text" name="name">
+							<input type="text" id="address" name="address">
 							<br>
 						<p>Message</p>
 							<textarea name="message" rows="10" cols="30">Type your message here.</textarea>
+						 <input type="submit" id="submit" value="Submit">
 					</form>
+
 				</div>
 			</div>
 
 		<div id="partners">
 			<section id="vets">
-				<h1>Rabbit Savvy Vet’s in the Wellington region:</h1>
+				<h2>Rabbit Savvy Vet’s in the Wellington region:</h2>
 				<div class="contact">
 					<h2>Brendon Bullen</h2>
 					<div class="shadebox">
@@ -84,7 +86,7 @@
 				</div>
 			</section>
 			<section id="supplies">
-				<h1>Suppliers of High Quality Hay and Pellets:</h1>
+				<h2>Suppliers of High Quality Hay and Pellets:</h2>
 				<div class="contact">
 					<h2>Sharpes feed barn</h2>
 					<div class="shadebox">	
@@ -123,8 +125,8 @@
 
 
 
-
 	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/form.js"></script>	
 	<script src="js/script.js"></script>
 	</body>
 </html>
