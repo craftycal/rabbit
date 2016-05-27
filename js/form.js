@@ -9,8 +9,8 @@ var emailMessage = document.querySelector("#email-message");
 var messageMessage = document.querySelector("#message-message");
 
 var namePattern = new RegExp("^[a-zA-Z .'-]{1,200");
-var emailPattern = new RegExp("^[a-zA-Z@ .'-]{1,100");
-var mesagePattern = new RegExp("{10,2000");
+var emailPattern = new RegExp("^[a-zA-Z0-9@ .'-]{1,100");
+var messagePattern = new RegExp("^[a-zA-Z0-9@$%? .'-]{20,2000");
 
 
 
@@ -22,16 +22,16 @@ var totalErrors = 0;
 	if(namePattern.test(nameInput.value)){
 		nameMessage.innerHTML = " ";
 	} else {
-		nameMessage.innerHTML = "* Please enter a name";
+		nameMessage.innerHTML = "* Please enter your name";
 		totalErrors ++;
-	}	
+	};	
 
 	if(emailPattern.test(emailInput.value)){
 		emailMessage.innerHTML = " ";
 	} else {
-		emailMessage.innerHTML = "* Please enter your email Address";
+		emailMessage.innerHTML = "* Please enter your email address";
 		totalErrors ++;
-	}
+	};
 
 	if(messagePattern.test(messageInput.value)){
 		messageMessage.innerHTML = " ";
@@ -42,9 +42,9 @@ var totalErrors = 0;
 
 	if (totalErrors > 0) {
 		event.preventDefault();
-	}
+	};
 
-}
+};
 
 $(function(){
 
