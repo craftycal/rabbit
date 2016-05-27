@@ -8,9 +8,9 @@ var nameMessage = document.querySelector("#name-message");
 var emailMessage = document.querySelector("#email-message");
 var messageMessage = document.querySelector("#message-message");
 
-var namePattern = new RegExp("^[a-zA-Z .'-]{1,200");
-var emailPattern = new RegExp("^[a-zA-Z0-9@ .'-]{1,100");
-var messagePattern = new RegExp("^[a-zA-Z0-9@$%? .'-]{20,2000");
+var namePattern = new RegExp("^[a-zA-Z .'-]{1,200}");
+var emailPattern = new RegExp("^[a-zA-Z0-9@ .'-]{1,100}");
+var messagePattern = new RegExp("^[a-zA-Z0-9@$%? .'-]{20,2000}");
 
 
 
@@ -46,26 +46,21 @@ var totalErrors = 0;
 
 };
 
-$(function(){
-
-	$("#submit").click(function(){
-
-		var date = $("#send").serializeArray();
-		console.log (date);
-
-		$.each(date, function(i, obj){
-
-			console.log(i, obj);
-
-				localStorage.setItem(obj.name, obj.value)
-		});
-	});
+$(document).ready(function () {
+    function init() {
+        if (localStorage["name"]) {
+            $('#name').val(localStorage["name"]);
+        }
+        if (localStorage["email"]) {
+            $('#email').val(localStorage["email"]);
+        }
+    }
+    init();
 });
 
-
-
-
-
+$('.stored').keyup(function () {
+    localStorage[$(this).attr('name')] = $(this).val();
+});
 
 
 
