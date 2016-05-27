@@ -122,9 +122,27 @@ nav li a #fbook {
 	background-color: #eeeeee;
 }
 
-.contact  h2 {
+#details  h2 {
+	font-family: "Amatic SC";
+	font-size: 2em;
 	margin-left: 8px; 
+	width: 100%; 
+	height: 20px; 
+	border-bottom: 1px solid red; 
+	text-align: center;
+	margin-bottom: 60px;
 }
+
+#details span {
+	font-size: 1em; 
+	background-color: #f9f9f9; 
+	padding: 0 10px;"
+}
+
+#details  h3 {
+	margin-left: 8px;
+}
+
 
 .shadebox {
 	width: 90%;
@@ -143,7 +161,44 @@ nav li a #fbook {
 
 .more-details:hover {
 	text-decoration: underline;
+	cursor: pointer;
 }
+
+#details a {
+	text-decoration: none;
+}
+
+#phone {
+	color: black;
+}
+
+.field-title {
+	margin-bottom: 4px;
+}
+
+#textarea {
+	width: 90%;
+	height: 200px;
+}
+
+#submit {
+	display: block;
+	background-color: #fa2a00;
+	text-decoration: none;
+	color: #f9f9f9;
+	padding: 5px;
+	font-style: italic;
+	font-size: 1em;
+	border: none;
+	width: 97px;
+	height: 30px;
+}
+
+#submit:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 
 /*care */
 
@@ -269,24 +324,24 @@ nav li a #fbook {
 		float: right;
 	}
 
-	#wrr-left{
+	#wrr{
 		display: inline-block;
 		width: 48%;
 		float: left;
 	}
 
-	#phone {
-		color: black;
-	}
-
-	#details a {
-		text-decoration: none;
-	}
+	
 
 	/*care*/
 
 	.box {
 		display: block;
+	}
+}
+
+@media screen and (min-width: 890px) {
+	#details  h2 {
+		margin-bottom: 40px;
 	}
 }
 
