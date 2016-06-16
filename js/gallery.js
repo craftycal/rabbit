@@ -4,14 +4,16 @@
       type: 'GET',
       dataType: 'jsonp',
       success: function(result) {
-        console.log( result );
+        //console.log( result );
         for( i = 0; i < result.data.length; i++ ) {
           var newImage = $('<img />').addClass('gallerypic').attr( 'src', result.data[i].source).attr( 'title', result.data[i].name);
           $('#gallery').append(newImage); 
+
+          var newTitle = $('<h2 />').addClass('rabbitName').attr( 'src', result.data[i].source).attr( 'title', result.data[i].name);
         }
       },
       error: function(result) {
-        console.log( result );
+        //console.log( result );
       },
       timeout: 10000,
     });
