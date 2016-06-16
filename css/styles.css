@@ -14,11 +14,21 @@ body {
 	margin: 0;
 	background-color:rgba(255, 255, 255, 0.5);
 }
+
 h2 {
 	font-family: "Architects Daughter";
+	font-size: 1.5em;
+	text-align: center;
 }
+
 h1 {
 	font-family: "Architects Daughter";
+	font-size: 1.5em;
+}
+
+.red {
+	color: red;
+	font-size: 1.6em;
 }
 
 #header {
@@ -34,8 +44,8 @@ h1 {
 	color: #f9f9f9;
 	width: 70%;
 	text-align: right;
-	font-weight: normal;
 	margin-top: 0;
+	margin-right: 10px;
 }
 
 #logo {
@@ -124,6 +134,7 @@ nav li a #fbook {
 
 
 /*contact*/
+
 #details {
 	margin: 8px;
 }
@@ -182,6 +193,7 @@ nav li a #fbook {
 }
 
 
+
 /*care */
 
 #care {
@@ -194,14 +206,6 @@ nav li a #fbook {
 	padding: 0;
 }
 
-#care h2 {
-	width: 100%; 
-	height: 20px; 
-	text-align: center;
-	margin-bottom: 60px;
-	margin-top: 40px;
-}
-
 .p-bold {
 	font-weight: bold;
 }
@@ -212,9 +216,7 @@ nav li a #fbook {
  
 
 @media screen and (min-width: 670px) {
-	nav ul{
-		display: block;
-	}
+
 
 	#header { 
 		border-style: none;
@@ -224,8 +226,21 @@ nav li a #fbook {
 		display: none;
 	}
 
+	nav ul{
+		display: block;
+	}
+
 	nav {
 		overflow:auto;
+		width: 100%;
+		display: block;
+		background-color: red;
+		line-height: 50px;
+	}
+	
+	.currentLink {
+		background-color: red;
+		color: white;
 	}
 
 	nav ul {
@@ -234,7 +249,8 @@ nav li a #fbook {
 		border-style: none;
 	}
 
-	nav li {display: inline-block; 
+	nav li {
+		display: inline-block; 
 		margin-right: 12px; 
 		color: white;
 	}
@@ -244,30 +260,23 @@ nav li a #fbook {
 		color: white;
 	}
 
-	#title { 
-		display: block;
-		font-size: 2em;
-	}
-
-	nav {
-		display: block;
-		background-color: red;
-		line-height: 50px;
-	}
-
-	.currentLink {
-		background-color: red;
-		color: white;
-	}
-
 	nav li a:active {
 		background-color: red;
 		color: white;
 	}
 
 	nav li a:hover {
-		text-decoration: underline;
+		background-image:  url("../img/rabbit_outline.png");
+		background-position: center;
+		background-repeat: no-repeat;
 	}
+
+	#title { 
+		display: block;
+		font-size: 2em;
+	}
+
+
 
 	/*adoption*/
 	#policy {
@@ -305,11 +314,12 @@ nav li a #fbook {
 		float: left;
 	}
 
+
 	.fb-page {
 		width: 45%;
-	float: right;
-	margin: 40px;
-}
+		float: right;
+		margin: 40px;
+	}
 	
 
 	/*care*/
@@ -318,22 +328,23 @@ nav li a #fbook {
 		display: block;
 	}
 }
+
 @media screen and (min-width: 765px) {
 	#title { 
 		font-size: 3em;
 	}
 
-
-
+	.vets {
+		float: left;
+		width: 50%;
+		margin: 0 auto;
+	}	
 }
-
-
 
 @media screen and (min-width: 1020px) {
 	#title { 
 		font-size: 4em;
 	}
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -341,7 +352,6 @@ nav li a #fbook {
 		max-width: 1200px;
 		margin: 0 auto;
 	}
-
 }
 
 
