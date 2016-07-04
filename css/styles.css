@@ -171,11 +171,6 @@ nav li a #fbook {
 	margin: 8px;
 }
 
-#care-photos img{
-	width: 300px;
-	float: right;
-}
-
 .p-bold {
 	font-weight: bold;
 }
@@ -292,9 +287,9 @@ nav li a #fbook {
 
 
 	.fb-page {
-		width: 45%;
-		float: right;
-		margin: 40px;
+		display: block;
+		position: absolute;;
+		right: 10px;
 	}
 
 
