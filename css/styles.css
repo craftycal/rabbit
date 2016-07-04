@@ -1,8 +1,7 @@
 html {
 	min-height: 100%;
-	background-color: #9BD7D5;
+	background-color: #f9f9f9;
 	font-family: "open sans", helvetica, Sans-Serif;
-	background-image: url("../img/hills_mk2.png");
 	background-attachment: fixed;
 	background-repeat: repeat-x;
 	background-position: center bottom;
@@ -12,8 +11,24 @@ body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	background-color:rgba(255, 255, 255, 0.5);
 }
+
+
+
+
+.rabbitnames{
+	width: 300px;
+	display: inline-block;
+
+}
+
+
+
+
+
+
+
+
 
 h2 {
 	font-family: "Architects Daughter";
@@ -36,12 +51,12 @@ h1 {
 	border-bottom: 2px solid white;
 }
 
-#title { 
+#title {
 	font-size: 1em;
 	display: none;
 	float: right;
 	font-family: "Pacifico";
-	color: #f9f9f9;
+	color: #333333;
 	width: 70%;
 	text-align: right;
 	margin-top: 0;
@@ -89,7 +104,7 @@ nav li a:active {
 	background-color: #333333;
 	color: #ffffff;
 }
- 
+
 nav li a #fbook {
 	font-size: 2em;
 	position: relative;
@@ -107,15 +122,15 @@ nav li a #fbook {
 }
 
 #adoption h1 {
-	width: 100%; 
-	height: 20px; 
+	width: 100%;
+	height: 20px;
 	text-align: center;
 	margin-bottom: 60px;
 	margin-top: 40px;
 }
 
 
-#gallery { 
+#gallery {
 	width: 90%;
 	margin: 0 auto;
 	padding-left: 10%;
@@ -129,7 +144,7 @@ nav li a #fbook {
 
 #policy p {
 	margin-top: 0;
-}	
+}
 
 
 
@@ -165,33 +180,6 @@ nav li a #fbook {
 	color: black;
 }
 
-.field-title {
-	margin-bottom: 4px;
-}
-
-#textarea {
-	width: 90%;
-	height: 200px;
-}
-
-#submit {
-	display: block;
-	background-color: #fa2a00;
-	text-decoration: none;
-	color: #f9f9f9;
-	padding: 5px;
-	font-style: italic;
-	font-size: 1em;
-	border: none;
-	width: 97px;
-	height: 30px;
-}
-
-#submit:hover {
-	text-decoration: underline;
-	cursor: pointer;
-}
-
 
 
 /*care */
@@ -200,10 +188,9 @@ nav li a #fbook {
 	margin: 8px;
 }
 
-#care img {
+#care-photos img{
 	width: 300px;
-	margin: 0 auto;
-	padding: 0;
+	float: right;
 }
 
 .p-bold {
@@ -213,16 +200,22 @@ nav li a #fbook {
 .box {
 	display: none;
 }
- 
+
+.food-list-box:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
 
 @media screen and (min-width: 670px) {
 
 
-	#header { 
+	#header {
 		border-style: none;
 	}
 
-	#menu { 
+	#menu {
 		display: none;
 	}
 
@@ -237,26 +230,26 @@ nav li a #fbook {
 		background-color: red;
 		line-height: 50px;
 	}
-	
+
 	.currentLink {
 		background-color: red;
 		color: white;
 	}
 
 	nav ul {
-		display: block !important; 
-		float: right; 
+		display: block !important;
+		float: right;
 		border-style: none;
 	}
 
 	nav li {
-		display: inline-block; 
-		margin-right: 12px; 
+		display: inline-block;
+		margin-right: 12px;
 		color: white;
 	}
 
-	nav li a { 
-		border-style: none; 
+	nav li a {
+		border-style: none;
 		color: white;
 	}
 
@@ -271,7 +264,7 @@ nav li a #fbook {
 		background-repeat: no-repeat;
 	}
 
-	#title { 
+	#title {
 		display: block;
 		font-size: 2em;
 	}
@@ -320,7 +313,7 @@ nav li a #fbook {
 		float: right;
 		margin: 40px;
 	}
-	
+
 
 	/*care*/
 
@@ -330,7 +323,7 @@ nav li a #fbook {
 }
 
 @media screen and (min-width: 765px) {
-	#title { 
+	#title {
 		font-size: 3em;
 	}
 
@@ -338,12 +331,18 @@ nav li a #fbook {
 		float: left;
 		width: 50%;
 		margin: 0 auto;
-	}	
+	}
 }
 
 @media screen and (min-width: 1020px) {
-	#title { 
+	#title {
 		font-size: 4em;
+	}
+
+	.food-list {
+		width: 25%;
+		float: left;
+		margin-right: 40px;
 	}
 }
 
@@ -353,11 +352,3 @@ nav li a #fbook {
 		margin: 0 auto;
 	}
 }
-
-
-
-
-
-
-
-
