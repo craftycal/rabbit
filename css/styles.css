@@ -213,6 +213,14 @@ nav li a #fbook {
 		line-height: 50px;
 	}
 
+	.dotted {
+		width: 100%;
+		height: 10px;
+		background-image: url("../img/dotted.png");
+		background-repeat: repeat-x;
+	}
+
+
 	.currentLink {
 		background-color: red;
 		color: white;
