@@ -168,7 +168,15 @@ nav li a #fbook {
 /*care */
 
 #care {
-	margin: 8px;
+	margin: 20px;
+}
+.image-link {
+	display: inherit;
+}
+
+.care-image {
+	display: inherit;
+	margin: 0 auto;
 }
 
 .p-bold {
@@ -179,11 +187,7 @@ nav li a #fbook {
 	display: none;
 }
 
-.food-list-box:after {
-	display: block;
-	content: "";
-	clear: both;
-}
+
 
 
 @media screen and (min-width: 670px) {
